@@ -1,0 +1,40 @@
+.section {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+
+    @media screen and (min-width: 786px) {
+        padding-top: 4rem;
+        padding-bottom: 3rem;
+    }
+
+    &-title {
+        position: relative;
+        font-size: $--h2-font-size;
+        color: $--first-color;
+        margin-top: $--mb-2;
+        margin-bottom: $--mb-4;
+        text-align: center;
+
+        @media screen and (min-width: 786px) {
+            margin-bottom: $--mb-6;
+        }
+    
+        &::after {
+            position: absolute;
+            content: "";
+            width: 64px;
+            height: 0.18rem;
+            left: 0;
+            right: 0;
+            margin: auto;
+            top: 2rem;
+            background-color: $--first-color;
+
+            @media screen and (min-width: 786px) {
+                width: 80px;
+                top: 3rem;
+            }
+        }
+    }
+}
+
